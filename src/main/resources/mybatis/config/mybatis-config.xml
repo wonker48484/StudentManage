@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"	"mybatis-3-config.dtd">
+<configuration>
+<settings>
+	<setting name="mapUnderscoreToCamelCase" value="true"/>
+</settings>
+<typeAliases>
+<package name="com.atguigu.mybatisplus.entity"/>
+</typeAliases>
+<environments default="decelopment">
+<environment id="development">
+<transactionManager type="JDBC"/>
+<dataSource type="POOLED">
+<property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+<property name="url" value="jdbc:mysql://localhost:3306/springDemo;serverTimezone=GMT"/>
+<property name="username" value="root"/>
+<property name="password" value="123456"/>
+</dataSource>
+</environment>
+</environments>
+
+</configuration>
